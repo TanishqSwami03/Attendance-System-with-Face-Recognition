@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
+    <style>
+        body {
+            background-image: url('/static/images/bg-01.jpeg');
+        }
+
+        .logout-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #ff0000;
+            /* Red color for logout button */
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 34px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button class="btn"> -->
+    <a class="logout-button" href="{% url 'admin-home' %}">Back</a>
+    <!-- </button> -->
+    <div class="container">
+        <!-- <h1 class="title">Sample Table Page</h1>
+    <p class="description">This is a sample table page created using HTML and CSS.</p> -->
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Section</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in students %}
+                <tr>
+                    <td scope="row">{{ forloop.counter }}</td>
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.section }}</td>
+                    <td>{{ student.course }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

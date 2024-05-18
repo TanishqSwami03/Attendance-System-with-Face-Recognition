@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Background color */
+    background-image: url('image/bg-01.jpeg'); /* Replace URL with your image path */
+    background-size: cover;
+    background-position: center;
+}
+.btn{
+    position: absolute;
+    /* margin: 10; */
+    top: 20px;
+    left: 50px;
+}
+.textbox {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(4, 60px);
+    gap: 20px;
+}
+.button {
+    height: 50px;
+    font-size: 16px;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    /* background-color: #45a049; */
+    background-color: #669cec;
+}
+
+.submit {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    width: 120px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.submit:hover {
+    background-color: #0056b3;
+}
+
+h1{
+    position: absolute; /* Position the h1 absolutely */
+    top: 10px; /* Distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+}

@@ -1,0 +1,58 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link rel="stylesheet" href="{% static 'css/first.css' %}">
+    <style>
+        body {
+            background-image: url('/static/images/bg-01.jpeg');
+        }
+
+        .logout-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #ff0000;
+            /* Red color for logout button */
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 34px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    {% if messages %}
+    <div class="message">
+        {% for message in messages %}
+        <div class="message">{{ message }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <div id="box1" class="button-box">
+        <a href="{% url 'check-attendance' %}"><b>Check Attendance</b></a>
+    </div>
+    <div id="box1" class="button-box">
+        <a href="{% url 'check-students' %}"><b>Check Students</b></a>
+    </div>
+    <div id="box2" class="button-box">
+        <a href="{% url 'courses' %}"><b>Courses</b></a>
+    </div>
+    <div id="box3" class="button-box">
+        <a href="{% url 'admin-new' %}"><b>Add Admin</b></a>
+    </div>
+
+    <a href="{% url 'admin-logout' %}" class="logout-button">Logout</a>
+
+</body>
+
+</html>

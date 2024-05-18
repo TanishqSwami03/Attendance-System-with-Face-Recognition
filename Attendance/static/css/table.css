@@ -1,0 +1,81 @@
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* height: 100vh;
+        width: 100vw; */
+        margin: 0;
+        padding: 0;
+        /* background-color: beige; */
+        background-image: url('image/bg-01.jpeg');
+        background-size: cover;
+        background-position: center;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        /* background: linear-gradient(135deg, #ff6ec4, #7873f5); */
+    }
+
+    .btn{
+        position: absolute;
+        /* margin: 10; */
+        top: 20px;
+        left: 50px;
+    }
+
+    .container {
+        min-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: beige;
+        color: #666;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    tr:hover {
+        background-color: #f0f0f0;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #fafafa;
+    }
+
+    .title {
+        text-align: center;
+        background-color: #4caf50;
+        color: #fff;
+        padding: 30px 0;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .description {
+        padding: 20px;
+        line-height: 1.6;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            border-radius: 0;
+        }
+    }

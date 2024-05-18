@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="{% static 'css/first.css' %}">
+    <style>
+        body {
+            background-image: url('/static/images/bg-01.jpeg');
+        }
+
+        .messages {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    {% if messages %}
+    <div class="message">
+        {% for message in messages %}
+        <div class="message">{{ message }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <div id="box1" class="button-box">
+        <a href="{% url 'mark-attendance' %}"><b>Mark Attendance</b></a>
+    </div>
+
+    <div id="box2" class="button-box">
+        <a href="{% url 'add-students' %}"><b>Add Student</b></a>
+    </div>
+
+    <div id="box3" class="button-box">
+        <a href="{% url 'admin-login' %}"><b>Admin Login</b></a>
+    </div>
+
+</body>
+
+</html>
