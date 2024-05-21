@@ -22,7 +22,6 @@ import numpy as np
 
 # @login_required
 def home(request):
-
     return render(request, 'home.html', {})
 
 
@@ -126,9 +125,9 @@ def mark_attendance(request):
                         attendance.save()
                         print(f"Attendance marked for {name}")
                         attendance_marked = True  # Set flag to True after marking attendance
-                        messages.success(request, f"Attendance marked for {name}")
+                        messages.success(request, f"Attendance marked for {name} !")
                     else:
-                        messages.success(request, f"Attendance already marked for {name}")
+                        messages.success(request, f"Attendance for {name} already marked !")
                         print(f"Attendance already marked for {name} today")
                     
                     # Close the camera and return to home page if attendance is marked

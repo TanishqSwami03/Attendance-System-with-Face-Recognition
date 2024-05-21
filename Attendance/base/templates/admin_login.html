@@ -17,21 +17,6 @@
     <title>Admin Login</title>
 </head>
 
-<!-- <body>
-    <h1>Admin Login</h1>
-    <form method="post">
-        {% csrf_token %}
-        <label for="username">Username:</label>
-        <input type="text" name="username" required><br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" required><br>
-        <button type="submit">Login</button>
-    </form>
-    {% for message in messages %}
-    {{message}}
-    {% endfor %}
-</body> -->
-
 <body>
 
     <div class="limiter">
@@ -84,22 +69,7 @@
 
 
     <div id="dropDownSelect1"></div>
-
-    <!--===============================================================================================-->
-    <!-- <script src="vendor/jquery/jquery-3.2.1.min.js"></script> -->
-    <!--===============================================================================================-->
-    <!-- <script src="vendor/animsition/js/animsition.min.js"></script> -->
-    <!--===============================================================================================-->
-    <!-- <script src="vendor/bootstrap/js/popper.js"></script> -->
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <!--===============================================================================================-->
-    <!-- <script src="vendor/select2/select2.min.js"></script> -->
-    <!--===============================================================================================-->
-    <!-- <script src="vendor/daterangepicker/moment.min.js"></script> -->
-    <!-- <script src="vendor/daterangepicker/daterangepicker.js"></script> -->
-    <!--===============================================================================================-->
-    <!-- <script src="vendor/countdowntime/countdowntime.js"></script> -->
-    <!--===============================================================================================-->
     <script src="{% static 'js/main.js' %}"></script>
 
 </body>
