@@ -1,38 +1,37 @@
-
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
     /* background-image: url('/static/images/bg-01.jpeg'); */
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
 
-  }
+}
   
-  .button-box {
-    width: 250px;
-    height: 400px;
-    margin: 20px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    color: rgb(245, 255, 49);
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out; /* Add transition for smooth effect */
+.button-box {
+  width: 250px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: rgb(245, 255, 49);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out; /* Add transition for smooth effect */
     /* background-image: url('https://img.freepik.com/free-vector/gradient-abstract-background-with-different-shapes_23-2149110301.jpg?size=626&ext=jpg&ga=GA1.1.1895979190.1715588878&semt=ais_user'); */
-    background: linear-gradient(135deg, #ff6ec4, #7873f5);
-    background-size: cover;
-    background-position: center;
-  }
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  background-size: cover;
+  background-position: center;
+}
 
   /* Hover effect: Increase size temporarily */
-  .button-box:hover {
-    transform: scale(1.1); /* Scale up by 10% on hover */
-  }
+.button-box:hover {
+  transform: scale(1.1); /* Scale up by 10% on hover */
+}
