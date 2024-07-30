@@ -153,16 +153,20 @@ def check_attendance(request):
 
     # Iterate over each attendance record
     for attendance in attendance_records:
-        # Check if the attendee is a student
-        if attendance.attendee_type == 'STUDENT':
-            # Get the associated student details
-            student = attendance.student
-            student_name = student.name
-            student_section = student.section
-            student_course = student.course.name
-        else:
-            # If the attendee is not a student, set details to None
-            student_name = student_section = student_course = None
+        # # Check if the attendee is a student
+        # if attendance.attendee_type == 'STUDENT':
+        #     # Get the associated student details
+        #     student = attendance.student
+        #     student_name = student.name
+        #     student_section = student.section
+        #     student_course = student.course.name
+        # else:
+        #     # If the attendee is not a student, set details to None
+        #     student_name = student_section = student_course = None
+        student = attendance.student
+        student_name = student.name
+        student_section = student.section
+        student_course = student.course.name
 
         # Add attendance details to the list
         attendance_details.append({
